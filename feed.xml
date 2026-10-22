@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>NHL Morning Rundown</title>
+<link>https://mhlgp.github.io/NHL-morning-podcast/</link>
+<language>en-us</language>
+<description>A spoken daily recap of last night's NHL games.</description>
+<itunes:author>Matt</itunes:author>
+<itunes:explicit>false</itunes:explicit>
+<item><title>NHL Rundown, Oct 22</title><description>Daily NHL rundown.</description><pubDate>Thu, 22 Oct 2026 08:56:08 -0500</pubDate><enclosure url="https://mhlgp.github.io/NHL-morning-podcast/episodes/2026-10-22.mp3" length="65472" type="audio/mpeg"/><guid isPermaLink="false">https://mhlgp.github.io/NHL-morning-podcast/episodes/2026-10-22.mp3</guid></item>
+</channel>
+</rss>
