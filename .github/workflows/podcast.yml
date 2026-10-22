@@ -1,0 +1,35 @@
+name: Build podcast
+on:
+  push:
+    paths:
+      - script.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: podcast
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/431690887346/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: nhl-podcast-voice@project-1a4fedeb-bacc-43cd-b9b.iam.gserviceaccount.com
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install google-auth requests
+      - run: python build_podcast.py
+        env:
+          GCP_PROJECT_ID: project-1a4fedeb-bacc-43cd-b9b
+      - name: Commit episode
+        run: |
+          git config user.name "podcast-bot"
+          git config user.email "podcast-bot@users.noreply.github.com"
+          git add episodes feed.xml
+          git commit -m "Add episode $(date +%F)" || echo "Nothing to commit"
+          git push
