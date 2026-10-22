@@ -7,6 +7,6 @@
 <description>A spoken daily recap of last night's NHL games.</description>
 <itunes:author>Matt</itunes:author>
 <itunes:explicit>false</itunes:explicit>
-<item><title>NHL Rundown, Oct 22</title><description>Daily NHL rundown.</description><pubDate>Thu, 22 Oct 2026 09:49:20 -0500</pubDate><enclosure url="https://mhlgp.github.io/NHL-morning-podcast/episodes/2026-10-22.mp3" length="1082016" type="audio/mpeg"/><guid isPermaLink="false">https://mhlgp.github.io/NHL-morning-podcast/episodes/2026-10-22.mp3</guid></item>
+<item><title>NHL Rundown, Oct 22</title><description>Daily NHL rundown.</description><pubDate>Thu, 22 Oct 2026 10:09:32 -0500</pubDate><enclosure url="https://mhlgp.github.io/NHL-morning-podcast/episodes/2026-10-22.mp3" length="1476480" type="audio/mpeg"/><guid isPermaLink="false">https://mhlgp.github.io/NHL-morning-podcast/episodes/2026-10-22.mp3</guid></item>
 </channel>
 </rss>
