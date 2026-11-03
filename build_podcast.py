@@ -10,6 +10,7 @@ VOICE = "en-US-Chirp3-HD-Charon"
 PROJECT_ID = os.environ["GCP_PROJECT_ID"]
 KEEP = 14
 TZ = ZoneInfo("America/Chicago")
+SHOW_TITLE = "NHL Rundown - Blackhawks"
 
 
 def chunk_text(text, limit=3500):
@@ -95,10 +96,10 @@ feed = (
     '<?xml version="1.0" encoding="UTF-8"?>\n'
     '<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">\n'
     "<channel>\n"
-    "<title>NHL Morning Rundown</title>\n"
+    "<title>" + SHOW_TITLE + "</title>\n"
     "<link>" + BASE_URL + "/</link>\n"
     "<language>en-us</language>\n"
-    "<description>A spoken daily recap of last night's NHL games.</description>\n"
+    "<description>A spoken daily recap of last night's NHL games, with a focus on the Blackhawks.</description>\n"
     "<itunes:author>Matt</itunes:author>\n"
     "<itunes:explicit>false</itunes:explicit>\n"
     + items +
