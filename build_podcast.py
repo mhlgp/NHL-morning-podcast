@@ -102,6 +102,7 @@ feed = (
     "<description>A spoken daily recap of last night's NHL games, with a focus on the Blackhawks.</description>\n"
     "<itunes:author>Matt</itunes:author>\n"
     "<itunes:explicit>false</itunes:explicit>\n"
+    '<itunes:image href="' + BASE_URL + '/NHLRundownBlackhawks.png"/>\n'
     + items +
     "</channel>\n</rss>\n"
 )
