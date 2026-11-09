@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-11-09",
+    "title": "NHL Rundown, Nov 9",
+    "published": "Mon, 09 Nov 2026 04:08:09 -0600"
+  },
+  {
     "date": "2026-11-08",
     "title": "NHL Rundown, Nov 8",
     "published": "Sun, 08 Nov 2026 04:09:50 -0600"
@@ -63,10 +68,5 @@
     "date": "2026-10-27",
     "title": "NHL Rundown, Oct 27",
     "published": "Tue, 27 Oct 2026 04:08:19 -0500"
-  },
-  {
-    "date": "2026-10-26",
-    "title": "NHL Rundown, Oct 26",
-    "published": "Mon, 26 Oct 2026 04:09:04 -0500"
   }
 ]
